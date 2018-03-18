@@ -1,0 +1,36 @@
+
+!!!!! NOTE : Delete Data.txt for repeat usages!!!!!
+
+Requirements :
+
+Python 3.x with :
+	Flask
+	Matplotlib
+	Numpy
+	Tkinter
+	smtplib
+	multiprocessing
+Email accounts for all voters
+Server with internet access
+
+
+Usage
+
+(Cube may not be updated automatically. Drag mouse or press any key to show current status)
+
+1.Open a command prompt. Navigate to the project folder (titled code).
+	Linux :  python vote.py
+	Windows :  py -3 vote.py
+In the command prompt, enter email addresses
+
+2. In any browser, Open localhost:5000
+
+3. Enter votes as sent to email addresses
+
+4. Press Finalize Voting on the Cube GUI. 
+
+Incorrect voting results in an unsolved cube
+Correct voting results in a solved cube
+
+
+!!!!! NOTE : Delete Data.txt for repeat usages!!!!!

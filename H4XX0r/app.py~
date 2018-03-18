@@ -1,0 +1,22 @@
+from flask import Flask, render_template, request
+import os
+app = Flask(__name__)
+poll_data = {
+       'question' : 'Enter your Rotation String :',
+       'fields'   : ['Flask', 'Django', 'TurboGears', 'web2py', 'pylonsproject']
+    }
+     
+@app.route('/')
+def root():
+    return render_template('poll.html', data=poll_data)
+
+@app.route('/poll')
+def poll():
+    id = request.args.get('vid')
+    stri = request.args.get('str')
+    print(id)
+    return render_template('thanks.html', data=poll_data)
+     
+if __name__ == "__main__":
+    app.run(debug=True)
+     
